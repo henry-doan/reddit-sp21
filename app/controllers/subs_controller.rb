@@ -71,6 +71,7 @@ class SubsController < ApplicationController
   def index
     @subs = Sub.all 
     render component: 'Subs', props: { subs: @subs }
+    # render component: 'TestCom', props: { subs: @subs }
   end
 
   def show
