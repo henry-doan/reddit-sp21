@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   # resources :addresses
   resources :subs do
     resources :topics 
+    # resources :topics, only: [:index, :new]
+    # resources :topics, except: [:index, :new]
   end
 
   # resources :topics do
